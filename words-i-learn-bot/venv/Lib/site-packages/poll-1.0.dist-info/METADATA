@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: poll
+Version: 1.0
+Summary: Utilities for polling, retrying, and exception handling
+Home-page: https://github.com/benjamin-hodgson/poll
+Author: Benjamin Hodgson
+Author-email: benjamin.hodgson@huddle.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: setuptools
+
+UNKNOWN
+
+
