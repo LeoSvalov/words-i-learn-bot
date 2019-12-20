@@ -4,15 +4,20 @@ bs4==0.0.1
 certifi==2019.9.11
 cffi==1.13.2
 chardet==3.0.4
+Click==7.0
 config==0.4.2
 cryptography==2.8
 cycler==0.10.0
 docutils==0.15.2
 Faker==2.0.4
+Flask==1.1.1
 future==0.18.2
 html5lib==1.0.1
 idna==2.8
+itsdangerous==1.1.0
+Jinja2==2.10.3
 kiwisolver==1.1.0
+MarkupSafe==1.1.1
 matplot==0.1.9
 matplotlib==3.1.1
 mechanize==0.4.4
@@ -43,3 +48,4 @@ urllib3==1.25.6
 ushlex==0.99.1
 webencodings==0.5.1
 websocket-client==0.56.0
+Werkzeug==0.16.0

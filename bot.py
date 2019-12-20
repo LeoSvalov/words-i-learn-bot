@@ -2,10 +2,12 @@ from resources import *
 import telebot
 import time
 from telebot import apihelper
-
+from flask import Flask, request
+import os
 token = "1056573429:AAEZXiBvCqYBHIDmtmN26hDyxWfHAjj7gmU"
 ip = '110.49.101.58'
 port = '1080'
+server = Flask(__name__)
 apihelper.proxy = {
   'https': 'socks5://{}:{}'.format(ip,port)
 }
@@ -38,8 +40,6 @@ def synonyms_message(message):
     global flag
     flag = 1
 
-
-
 @bot.message_handler(content_types=['text'])
 def text_message(message):
 	global flag
@@ -56,6 +56,15 @@ def text_message(message):
 			bot.send_message(message.chat.id, 'Well, hello hello, yound lady! How are u doing?', parse_mode='Markdown')
 		else: bot.send_message(message.chat.id, "*Sorry buddy, totally didn't get your point! Try to use commands, hope it will help u!*", parse_mode='Markdown')
 
+@server.route('/' + token, methods = ['POST'])
+def getMessage():
+	bot.procces_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+	return "!", 200
+
+@server.route("/")
+def webhook():
+	bot.remove_webhook()
+	bot.set_webhook(url = 'https://obscure-scrubland-87348.herokuapp.com/' + token)
 
 def main():
 	try:
@@ -66,4 +75,5 @@ def main():
 		print("Internet error!")
 
 if __name__ == '__main__':
-	main()
+	# main()
+	server.run(host = "0.0.0.0",  port = int(os.environ.get('PORT',5000)))
