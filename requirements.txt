@@ -28,7 +28,7 @@ pyTelegramBotAPI==3.6.6
 python-dateutil==2.8.0
 python-telegram-bot==12.2.0
 readme-renderer==24.0
-requests==2.10.0
+requests==2.20.0
 requests-toolbelt==0.9.1
 SimpleWebSocketServer==0.1.1
 six==1.12.0
