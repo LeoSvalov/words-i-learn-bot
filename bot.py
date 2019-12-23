@@ -4,7 +4,8 @@ import time
 from telebot import apihelper
 from flask import Flask, request
 import os
-token = "1056573429:AAEZXiBvCqYBHIDmtmN26hDyxWfHAjj7gmU"
+
+token = <'Token of your bot'>
 ip = '110.49.101.58'
 port = '1080'
 server = Flask(__name__)
@@ -65,7 +66,7 @@ def getMessage():
 @server.route("/")
 def webhook():
 	bot.remove_webhook()
-	bot.set_webhook(url = 'https://obscure-scrubland-87348.herokuapp.com/' + token)
+	bot.set_webhook(url = 'Url of your app' + token)
 
 def main():
 	try:
