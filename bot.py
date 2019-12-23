@@ -21,10 +21,8 @@ def start_message(message):
 # help - Description of all commands
 @bot.message_handler(commands=['help'])
 def help_message(message):
-    bot.send_message(message.chat.id, '''Well, I have 3 commands _( It's ain't much but it's honest work :) )_ and there is a decription for them\n 
-    	/wotd - It gives u the word of the day according to the dicitonary.com \n
-    	/definition - It gives u definition of the desired word from dictionary.com \n
-    	/synonyms - It gives u several synonyms of the desired word from thesaurus.com \n''' , parse_mode='Markdown')
+    bot.send_message(message.chat.id, 
+    	'''Well, I have 3 commands _(It's ain't much but it's honest work :))_ and there is a decription for them\n/wotd - It gives u the word of the day according to the dicitonary.com \n/definition - It gives u definition of the desired word from dictionary.com \n/synonyms - It gives u several synonyms of the desired word from thesaurus.com \n''' , parse_mode='Markdown')
 
 @bot.message_handler(commands=['wotd'])
 def wotd_message(message):
