@@ -57,6 +57,7 @@ def parse_synonyms(word):
 	if validation(word) == True and html !="-1":		
 		soup  = BeautifulSoup(html, features = "html5lib")
 		output = soup.find('div', class_="css-1kc5m8x e1qo4u830").get_text("\n",strip=True)
+		word  = word.lower()
 		output = output[output.find(word)+len(word):len(output)]
 		output = "Synonyms for *" + word + "*:\n" + output
 		output = output.replace("MOST RELEVANT","")
