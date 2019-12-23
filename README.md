@@ -6,5 +6,5 @@ The bot takes information from [dictionary.com](https://www.dictionary.com) and 
 - Get synonyms of the desired word from [thesaurus.com](https://www.thesaurus.com) 
 
 ### Used  libraries:
-- [BeatifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (for parsing htmls of sites and getting needed info)
-- [Telebot](https://github.com/eternnoir/pyTelegramBotAPI) (for setting up Telegram bot)
+- [BeatifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) (for parsing htmls of sites and getting needed info), *code is in* **resources.py**
+- [Telebot](https://github.com/eternnoir/pyTelegramBotAPI) (for setting up Telegram bot), *code is in* **bot.py**
