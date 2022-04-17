@@ -5,7 +5,7 @@ from telebot import apihelper
 from flask import Flask, request
 import os
 
-token = <'Token of your bot'>
+token = <'5282910193:AAGEHBuy9RaT9w3rQyVDkEUqSTlChuKBwmM'>
 ip = '110.49.101.58'
 port = '1080'
 server = Flask(__name__)
