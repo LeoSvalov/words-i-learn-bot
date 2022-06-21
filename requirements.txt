@@ -21,7 +21,7 @@ MarkupSafe==1.1.1
 matplot==0.1.9
 matplotlib==3.1.1
 mechanize==0.4.4
-numpy==1.17.3
+numpy==1.22.0
 pkginfo==1.5.0.1
 psycopg2==2.8.4
 pycparser==2.19
